@@ -15,4 +15,5 @@ void main() {
   print(firstvalue + secondvalue);
   print(firstvalue - secondvalue);
   print(firstvalue * secondvalue);
+  print(firstvalue / secondvalue);
 }
