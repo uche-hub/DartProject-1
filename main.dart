@@ -1,4 +1,6 @@
 // A Function
+// ignore_for_file: avoid_print
+
 void main() {
   // Variable
 
@@ -60,4 +62,18 @@ void main() {
   /* So here 600 which is the reasigned value of the initial value was added to  400 */
   mainValue = mainValue + 400;
   print(mainValue);
+
+  // Reasigning String Variables
+  print("======== Reasigning String Variables ==========");
+
+  String greeting = "Hello World";
+  print(greeting);
+
+  // Resign or Add extra word
+  greeting = "$greeting, Wagwon";
+  print(greeting);
+
+  /* we only use {} if we want to get the value of the string */
+  greeting = "${greeting.length}, Wagwon";
+  print(greeting);
 }
