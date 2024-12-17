@@ -16,4 +16,14 @@ void main() {
   print(firstvalue - secondvalue);
   print(firstvalue * secondvalue);
   print(firstvalue / secondvalue);
+
+  print("======== Double ========");
+
+  double firstvalue2 = 400.78;
+  double secondvalue2 = 50.69;
+
+  print(firstvalue2 + secondvalue2);
+  print(firstvalue2 - secondvalue2);
+  print(firstvalue2 * secondvalue2);
+  print(firstvalue2 / firstvalue2);
 }
