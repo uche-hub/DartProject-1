@@ -47,4 +47,12 @@ void main() {
   dynamic somevalue = 24;
 
   print(somevalue);
+
+  print("======== Reasigning Variables ==========");
+
+  int mainValue = 300;
+  print(mainValue);
+
+  mainValue = 600;
+  print(mainValue);
 }
