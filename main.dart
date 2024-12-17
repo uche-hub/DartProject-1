@@ -39,4 +39,11 @@ void main() {
   bool isUche24 = true;
 
   print(isUche24);
+
+  //dynamic variable used for any value (e.g: strings, int, double, boolean);
+  print("======== Dynamic ========");
+
+  dynamic somevalue = 24;
+
+  print(somevalue);
 }
