@@ -32,4 +32,11 @@ void main() {
   String textvalue = "Hello world";
 
   print(textvalue);
+
+  //Boolean is True/False
+  print("========= Boolean =======");
+
+  bool isUche24 = true;
+
+  print(isUche24);
 }
