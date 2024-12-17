@@ -26,4 +26,10 @@ void main() {
   print(firstvalue2 - secondvalue2);
   print(firstvalue2 * secondvalue2);
   print(firstvalue2 / firstvalue2);
+
+  print("======== Strings =======");
+
+  String textvalue = "Hello world";
+
+  print(textvalue);
 }
