@@ -48,11 +48,16 @@ void main() {
 
   print(somevalue);
 
+  // Reasigning Variables and Adding numbers to reasigned value
   print("======== Reasigning Variables ==========");
 
   int mainValue = 300;
   print(mainValue);
 
   mainValue = 600;
+  print(mainValue);
+
+  /* So here 600 which is the reasigned value of the initial value was added to  400 */
+  mainValue = mainValue + 400;
   print(mainValue);
 }
