@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
-void main() { // A Function
+void main() {
+  // A Function
   // Variable
 
   /* To Create a variable:
@@ -113,4 +114,17 @@ void main() { // A Function
 
   print(someValueF);
   print(someVauleC);
+
+  // ============= Optional Variables / Nullable Variabes  ===============
+
+  /* Optional Variables means that variables can have 2 vaules or more than one value not at  run time. (e.g: String / int / bool and  null)  */
+
+  String? stringValue; // dart already knows that this is null
+
+  print(stringValue);
+
+  /* Reassign */
+
+  stringValue = "Hello World, Wagwon"; // This will reassign the  null variable
+  print(stringValue);
 }
