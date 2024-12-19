@@ -1,7 +1,6 @@
-// A Function
 // ignore_for_file: avoid_print
 
-void main() {
+void main() { // A Function
   // Variable
 
   /* To Create a variable:
@@ -83,9 +82,9 @@ void main() {
 
   // var means variables that varies
   var someValue = "10";
-  // final means the final variables and cant be change or assigned. 
+  // final means the final variables and cant be change or assigned.
   final someValue2 = "10";
-  // const means constant variables and cant be change or assigned. 
+  // const means constant variables and cant be change or assigned.
   const someVaule3 = "10";
 
   print(someValue);
@@ -99,4 +98,19 @@ void main() {
   someValue = "200";
 
   print(someValue);
+
+  // ============= Different Between Final and Const  ===============
+
+  /* Final is a  runtime constant while const is a compille time contant 
+      So DateTime.now(); does not work for const.
+  */
+
+  print("=========== Different Between Final and Const ===========");
+
+  final someValueF = DateTime.now(); // to give us date and time
+  const someVauleC =
+      "10"; // const can not be runTime variables, it can only be compile time variable
+
+  print(someValueF);
+  print(someVauleC);
 }
