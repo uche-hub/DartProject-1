@@ -41,6 +41,7 @@ void main() {
     print("Yes");
   }
 
+  print("========= Ternary statement ==========");
   // Ternary if statement
   String someValue = "Hi!";
 
@@ -48,4 +49,17 @@ void main() {
   String value = someValue.startsWith("H") ? "It does" : "it doesnt";
 
   print(value);
+
+  print("========= Switch statement ==========");
+  // Switch Statement
+
+  /* So case stands as the true statement and default is the else. You only use break when you 
+    have empty cases 
+  */
+  switch (someValue) {
+    case "Hi":
+      print("Yes Hi");
+    default:
+      print("No Hi");
+  }
 }
