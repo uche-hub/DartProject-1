@@ -1,26 +1,32 @@
 // Exercise 1
 
 void main() {
-  String destinationZone = "XYZ";
+  String destinationZone = "fff";
   double weightInKg = 6;
 
+  double cost = 0;
+
   // Using If Statement
+  // created a double variable called cost and gave it 0 then assigned it to hold the calculation of the weight and the shipping cost amount
   if (destinationZone == "PQR") {
-    print('Shipping Cost is ${weightInKg * 10}');
+    cost = weightInKg * 10;
   } else if (destinationZone == "XYZ") {
-    print('Shipping Cost is ${weightInKg * 5}');
+    cost = weightInKg * 5;
   } else if (destinationZone == "ABC") {
-    print('Shipping Cost is ${weightInKg * 7}');
+    cost = weightInKg * 7;
   } else {
     print("Shipping Unavaliable");
+    return;
   }
+
+  print("Shipping Cost is $cost");
 
   // Using Switch Statement
   switch (destinationZone) {
     case "PQR":
       print('Shipping Cost is ${weightInKg * 10}');
     case "XYZ":
-      print ('Shipping Cost is ${weightInKg * 5}');
+      print('Shipping Cost is ${weightInKg * 5}');
     case "ABC":
       print('Shipping Cost is ${weightInKg * 7}');
     default:
