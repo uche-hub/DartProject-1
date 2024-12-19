@@ -40,4 +40,12 @@ void main() {
   } else {
     print("Yes");
   }
+
+  // Ternary if statement
+  String someValue = "Hi!";
+
+  /* This is another way to write if statements */
+  String value = someValue.startsWith("H") ? "It does" : "it doesnt";
+
+  print(value);
 }
