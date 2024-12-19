@@ -99,7 +99,7 @@ void main() { // A Function
 
   print(someValue);
 
-  // ============= Different Between Final and Const  ===============
+  // ============= Difference Between Final and Const  ===============
 
   /* Final is a  runtime constant while const is a compille time contant 
       So DateTime.now(); does not work for const.
