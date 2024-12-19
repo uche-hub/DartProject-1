@@ -76,4 +76,27 @@ void main() {
   /* we only use {} if we want to get the value of the string */
   greeting = "${greeting.length}, Wagwon";
   print(greeting);
+
+  // ============= New ways of writing Variables  ===============
+  /* var / final / const variableName = value; */
+  print("========== New ways of writing Variables ===========");
+
+  // var means variables that varies
+  var someValue = "10";
+  // final means the final variables and cant be change or assigned. 
+  final someValue2 = "10";
+  // const means constant variables and cant be change or assigned. 
+  const someVaule3 = "10";
+
+  print(someValue);
+  print(someValue2);
+  print(someVaule3);
+
+  print("-----------------");
+  // Resigning var variables
+  /* You cannot reasign values for final and cosnt variables */
+
+  someValue = "200";
+
+  print(someValue);
 }
