@@ -8,6 +8,10 @@ void main() {
   // to assign the toAssign  Function
   int age = toAssign();
   print(age);
+
+  // returning 2 values
+  var name = ageName();
+  print(name);
 }
 
 /* So what this is doing is that..... when you create a function and add your code you need to call
@@ -24,6 +28,12 @@ void ucheName() {
 
 int toAssign() {
   return 24;
+}
+
+// Returning 2 values from a Function
+
+(int, String) ageName() {
+  return (24, "Uchenna");
 }
 
 // void means that the function is not returning anything
