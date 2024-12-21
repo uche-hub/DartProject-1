@@ -21,6 +21,10 @@ void main() {
   // Returning Nullble Variables
   var testName = testString();
   print(testName);
+
+  // Function Argument
+  String nero = "Uchenna";
+  print(nero);
 }
 
 // Returning Nullble Variables
@@ -49,6 +53,11 @@ int toAssign() {
 
 (int, String) ageName() {
   return (24, "Uchenna");
+}
+
+// Function Argument
+void arguFn(String nero) {
+  print(nero);
 }
 
 // void means that the function is not returning anything
