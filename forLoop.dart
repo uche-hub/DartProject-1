@@ -30,4 +30,33 @@ void main() {
   for (int i = 0; i < value.length; i++) {
     print(value[i]);
   }
+
+  // While Loop
+
+  /* While loop only uses conditions 
+    while (condition)
+  */
+  print("======== While Loop ========");
+
+  int i = 0;
+
+  while (i < value.length) {
+    print(value[
+        i]); // without adding an increment this will give an infinite loop, crashing your system
+    i++; // your increment
+  }
 }
+
+/* ========= Difference ==========
+  For Loop is used fo definite loops when the number of iterations is known.
+  The While  loop is used when the number of iterations is not known.
+
+  For loops can have their  counter variables declared in the declaration itself.
+  While loops, there is no built-in loop control variable with a while loop.
+
+  For loops, This is preferable when we know  exactly how many times the loop will be repeated.
+  The while loop will continue to run infinite number of times until the condition is met.
+
+  The For loop iterates  inifinite number of times if the condition is not specified.
+  The While loop, if the condition is not specified, it shows a compilation error.
+*/
