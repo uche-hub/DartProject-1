@@ -17,6 +17,16 @@ void main() {
   var (ucheAge, uchennaName) = ageName();
   print(ucheAge);
   print(uchennaName);
+
+  // Returning Nullble Variables
+  var testName = testString();
+  print(testName);
+}
+
+// Returning Nullble Variables
+String? testString() {
+  print("Hello World");
+  return null;
 }
 
 /* So what this is doing is that..... when you create a function and add your code you need to call
