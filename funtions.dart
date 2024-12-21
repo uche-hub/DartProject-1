@@ -12,6 +12,11 @@ void main() {
   // returning 2 values
   var name = ageName();
   print(name);
+
+  // Patterns
+  var (ucheAge, uchennaName) = ageName();
+  print(ucheAge);
+  print(uchennaName);
 }
 
 /* So what this is doing is that..... when you create a function and add your code you need to call
