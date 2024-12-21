@@ -1,7 +1,7 @@
 // Exercise 1
 
 void main() {
-  String destinationZone = "fff";
+  String destinationZone = "PQR";
   double weightInKg = 6;
 
   double cost = 0;
@@ -18,7 +18,6 @@ void main() {
     print("Shipping Unavaliable");
     return;
   }
-
   print("Shipping Cost is $cost");
 
   // Using Switch Statement
