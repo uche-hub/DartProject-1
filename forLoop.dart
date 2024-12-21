@@ -45,6 +45,20 @@ void main() {
         i]); // without adding an increment this will give an infinite loop, crashing your system
     i++; // your increment
   }
+
+  // DO WHILE LOOP
+  print("======== DO WHILE LOOP ==========");
+
+  int j = 0;
+
+  /* DO WHILE is an Exit control loop */
+
+  /* Meaning the condition is checked only after the do loop  has run. */
+
+  do {
+    print(value[j]);
+    j++;
+  } while (j < value.length);
 }
 
 /* ========= Difference ==========
