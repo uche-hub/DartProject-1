@@ -18,4 +18,16 @@ void main() {
   for (int i = 0; i < 10; i++) {
     print("I Love Food ${i + 1}");
   }
+
+  // Count length of Strings
+
+  print("========= Counting length of Strings with For Loops ============");
+
+  String value = 'Uchenna';
+
+  // the i < value.length is the condition that counts the charecter of the name "Uchenna" one by one
+
+  for (int i = 0; i < value.length; i++) {
+    print(value[i]);
+  }
 }
