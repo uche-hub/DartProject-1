@@ -8,12 +8,25 @@ void main() {
   */
   Car car = Car();
   print(car.noOFWheels);
+
+  // VEHICLE INHERITED FROM "SOMECLASS"
+  car.accelerate();
+  print(car.speed);
 }
 
-class Vehicle {
-  int speed = 10;
+class SomeClass {
+  int speed = 15;
+  final String greeting = "Welcome";
+
+  void accelerate() {
+    speed += 30;
+  }
+}
+
+class Vehicle extends SomeClass {
   bool isEngineWorking = false;
 
+  @override
   void accelerate() {
     speed += 10;
   }
