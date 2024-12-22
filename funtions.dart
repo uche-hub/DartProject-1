@@ -36,6 +36,10 @@ void main() {
 
   print(stuff.age);
   print(stuff.qName);
+
+  // Arrow  Function
+  final arrowName = arrowFn();
+  print(arrowName);
 }
 
 // Returning Nullble Variables
@@ -83,6 +87,10 @@ void fnNameArg(
 ({int age, String qName}) printStuff() {
   return (age: 24, qName: "Uchenna");
 }
+
+// Arrow Function
+// used when you calling a single code.
+String arrowFn() => "Uchenna  Ndukwe";
 
 // void means that the function is not returning anything
 
