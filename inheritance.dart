@@ -42,3 +42,19 @@ class Car extends Vehicle {
     print(noOFWheels);
   }
 }
+
+class Truck extends Vehicle {
+  int noOfWheels = 8;
+
+  void printSomething() {
+    print(noOfWheels);
+  }
+}
+
+class Bike extends Vehicle {
+  int noOfWheels = 2;
+
+  void printSomething() {
+    print(noOfWheels);
+  }
+}
