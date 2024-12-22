@@ -30,6 +30,12 @@ void main() {
   String frName = "Uche";
   String lstName = "Ndukwe";
   fnNameArg(frName: frName, age: 24, lstName: lstName);
+
+  // Named Record
+  final stuff = printStuff();
+
+  print(stuff.age);
+  print(stuff.qName);
 }
 
 // Returning Nullble Variables
@@ -71,6 +77,11 @@ void fnNameArg(
   print(frName);
   print(age);
   print(lstName);
+}
+
+// Named Record
+({int age, String qName}) printStuff() {
+  return (age: 24, qName: "Uchenna");
 }
 
 // void means that the function is not returning anything
