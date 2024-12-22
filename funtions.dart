@@ -69,6 +69,8 @@ void arguFn(String nero) {
 void fnNameArg(
     {required String frName, required int age, required String lstName}) {
   print(frName);
+  print(age);
+  print(lstName);
 }
 
 // void means that the function is not returning anything
