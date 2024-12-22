@@ -25,6 +25,11 @@ void main() {
   // Function Argument
   String nero = "Uchenna";
   print(nero);
+
+  // Function Name Argument
+  String frName = "Uche";
+  String lstName = "Ndukwe";
+  fnNameArg(frName: frName, age: 24, lstName: lstName);
 }
 
 // Returning Nullble Variables
@@ -58,6 +63,12 @@ int toAssign() {
 // Function Argument
 void arguFn(String nero) {
   print(nero);
+}
+
+// Function Named Argument
+void fnNameArg(
+    {required String frName, required int age, required String lstName}) {
+  print(frName);
 }
 
 // void means that the function is not returning anything
