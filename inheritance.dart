@@ -12,6 +12,9 @@ void main() {
   // VEHICLE INHERITED FROM "SOMECLASS"
   car.accelerate();
   print(car.speed);
+
+  Motor motor = Motor();
+  motor.accelerate();
 }
 
 class SomeClass {
@@ -29,6 +32,20 @@ class Vehicle extends SomeClass {
   @override
   void accelerate() {
     speed += 10;
+  }
+}
+
+// Abstact  Classes
+// Abstract classes cannot be constructed.
+// YOU CAN EXTEND OR IMPLEMENT AN ABSTRACT CLASS
+abstract class Vehicle2 {
+  void accelerate();
+}
+
+class Motor implements Vehicle2 {
+  @override
+  void accelerate() {
+    print("Moving");
   }
 }
 
