@@ -11,10 +11,17 @@ void main() {
   // 2. Abstraction - Process of hiding internal details and  complexity of an object
   Animal2 anim = Horse();
   anim.sound();
-  
+
   // 3. Inheritance
-  //  4. Encapsulation
+  //  4. Encapsulation - is the bondling of data and method together as a single unit.
 }
+
+// Encapsulation
+// class Person {
+//   String _name;
+
+  
+// }
 
 abstract class Animal2 {
   void sound();
