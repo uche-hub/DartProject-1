@@ -8,9 +8,23 @@ void main() {
   Dog dog = Dog();
   dog.sound();
 
-  // 2. Abstraction
+  // 2. Abstraction - Process of hiding internal details and  complexity of an object
+  Animal2 anim = Horse();
+  anim.sound();
+  
   // 3. Inheritance
   //  4. Encapsulation
+}
+
+abstract class Animal2 {
+  void sound();
+}
+
+class Horse extends Animal2 {
+  @override
+  void sound() {
+    print("Horse Beating");
+  }
 }
 
 class Animal {
