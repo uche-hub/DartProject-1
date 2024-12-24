@@ -24,6 +24,15 @@ void main() {
     Student("Vanessa Ndukwe"),
   ];
 
+  print(studentList);
+
+  // Use the .add() to add a student
+  studentList.add(Student("Emenike Ndukwe"));
+
+  // to update a student in class that is not among the list
+  studentList[3] = Student("New Kid");
+  print(studentList);
+
   // to list all the students
   final studentsList = studentList[3].name;
   print(studentsList);
@@ -48,4 +57,7 @@ class Student<T> {
   void setName(T name) {
     print("My name is $name");
   }
+
+  @override
+  String toString() => 'Student: $name';
 }
