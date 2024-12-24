@@ -18,7 +18,7 @@ void main() {
 
   // Generics
   // so what this does the code knows that <T> is an integar so the <T> is a generic
-  final student = Student("30");
+  final student = Student("Uchenna");
   print(student.name);
 }
 
@@ -27,4 +27,8 @@ class Student<T> {
   final T name;
 
   Student(this.name);
+
+  void setName(T name) {
+    print("My name is $name");
+  }
 }
