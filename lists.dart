@@ -16,5 +16,15 @@ void main() {
   List<int> marks = [10, 20, 30, 40, 50];
   print(marks[4]);
 
-  // Gener
+  // Generics
+  // so what this does the code knows that <T> is an integar so the <T> is a generic
+  final student = Student("30");
+  print(student.name);
+}
+
+// Understanding Generics
+class Student<T> {
+  final T name;
+
+  Student(this.name);
 }
