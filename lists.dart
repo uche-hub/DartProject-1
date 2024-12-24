@@ -16,6 +16,23 @@ void main() {
   List<int> marks = [10, 20, 30, 40, 50];
   print(marks[4]);
 
+  // Creating list of student
+  List<Student> studentList = [
+    Student("Ikenna Ndukwe"),
+    Student("Daniella Ndukwe"),
+    Student("Uchenna Ndukwe"),
+    Student("Vanessa Ndukwe"),
+  ];
+
+  // to list all the students
+  final studentsList = studentList[3].name;
+  print(studentsList);
+
+  // the .name called the name inside the Student class.
+  print(studentList[2].name);
+
+  // to list all the students
+
   // Generics
   // so what this does the code knows that <T> is an integar so the <T> is a generic
   final student = Student("Uchenna");
