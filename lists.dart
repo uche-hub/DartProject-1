@@ -29,6 +29,9 @@ void main() {
   // Use the .add() to add a student
   studentList.add(Student("Emenike Ndukwe"));
 
+  // using the .insert() to insert the new student whereever u want
+  studentList.insert(2, Student("Ada Ndukwe"));
+
   // to update a student in class that is not among the list
   studentList[3] = Student("New Kid");
   print(studentList);
