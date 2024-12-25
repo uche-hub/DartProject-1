@@ -17,10 +17,13 @@ void main() {
   print(marks[4]);
 
   // Creating list of student
+
+  final removeUchenna = Student("Uchenna Ndukwe");
+
   List<Student> studentList = [
     Student("Ikenna Ndukwe"),
     Student("Daniella Ndukwe"),
-    Student("Uchenna Ndukwe"),
+    removeUchenna,
     Student("Vanessa Ndukwe"),
   ];
 
@@ -35,6 +38,9 @@ void main() {
   // to update a student in class that is not among the list
   studentList[3] = Student("New Kid");
   print(studentList);
+
+  // to remove student from list
+  studentList.remove(Student("Uchenna"));
 
   // to list all the students
   final studentsList = studentList[3].name;
