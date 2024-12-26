@@ -35,10 +35,14 @@ void main() {
 
   // this is to add more than one key and value pairs
   marks.addAll({
-    "Ada" : 60,
-    "Oriel" : 80,
-    "Aviel" : 90,
+    "Ada": 60,
+    "Oriel": 80,
+    "Aviel": 90,
   });
+
+  // to remove a value you just need to pass in the key only
+  // here "Uchenna" is the key.
+  marks.remove("Uchenna");
 
   print(marks);
 }
