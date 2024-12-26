@@ -33,6 +33,13 @@ void main() {
   // here you call the key name and assign a new value to it so it will update the initial value.
   marks["Uchenna"] = 70;
 
+  // this is to add more than one key and value pairs
+  marks.addAll({
+    "Ada" : 60,
+    "Oriel" : 80,
+    "Aviel" : 90,
+  });
+
   print(marks);
 }
 
