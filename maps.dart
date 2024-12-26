@@ -28,6 +28,11 @@ void main() {
 
   // to add to a map
   marks["Emenike"] = 50;
+
+  // to update value of a key
+  // here you call the key name and assign a new value to it so it will update the initial value.
+  marks["Uchenna"] = 70;
+
   print(marks);
 }
 
