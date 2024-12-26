@@ -58,6 +58,9 @@ void main() {
   // to remove student from list
   studentList.remove(Student("Uchenna", 80));
 
+  // to reserve the list using .reserved()
+  print(studentList.reversed.toList());
+
   // to list all the students
   final studentsList = studentList[3].name;
   print(studentsList);
