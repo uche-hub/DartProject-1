@@ -22,7 +22,7 @@ class Cookie {
 
   //private variable
   int _height = 4;
-  int _width = 5;
+  final int _width = 5;
 
   // Getters
   int get height => _height;

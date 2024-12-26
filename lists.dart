@@ -18,29 +18,45 @@ void main() {
 
   // Creating list of student
 
-  final removeUchenna = Student("Uchenna Ndukwe");
+  final removeUchenna = Student("Uchenna Ndukwe", 30);
 
   List<Student> studentList = [
-    Student("Ikenna Ndukwe"),
-    Student("Daniella Ndukwe"),
+    Student("Ikenna Ndukwe", 10),
+    Student("Daniella Ndukwe", 20),
     removeUchenna,
-    Student("Vanessa Ndukwe"),
+    Student("Vanessa Ndukwe", 40),
   ];
 
   print(studentList);
 
+  /* ========== to fetch student above 20 =========== */
+  // 1. Create a new list of empty students
+  // 2. run a for loop
+  // 3. check if the grade of 1 student is greater than 30
+  // 4. if true, add student to my new list
+  // 5. print list out of for loop
+
+  List<Student> filteredStudent = [];
+  for (int i = 0; i < studentList.length; i++) {
+    if (studentList[i].marks >= 20) {
+      filteredStudent.add(studentList[i]);
+    }
+  }
+
+  print(filteredStudent);
+
   // Use the .add() to add a student
-  studentList.add(Student("Emenike Ndukwe"));
+  studentList.add(Student("Emenike Ndukwe", 50));
 
   // using the .insert() to insert the new student whereever u want
-  studentList.insert(2, Student("Ada Ndukwe"));
+  studentList.insert(2, Student("Ada Ndukwe", 60));
 
   // to update a student in class that is not among the list
-  studentList[3] = Student("New Kid");
+  studentList[3] = Student("New Kid", 70);
   print(studentList);
 
   // to remove student from list
-  studentList.remove(Student("Uchenna"));
+  studentList.remove(Student("Uchenna", 80));
 
   // to list all the students
   final studentsList = studentList[3].name;
@@ -53,15 +69,17 @@ void main() {
 
   // Generics
   // so what this does the code knows that <T> is an integar so the <T> is a generic
-  final student = Student("Uchenna");
+  final student = Student("Uchenna", 90);
   print(student.name);
 }
 
 // Understanding Generics
 class Student<T> {
   final T name;
+  // To filter by marks
+  final int marks;
 
-  Student(this.name);
+  Student(this.name, this.marks);
 
   void setName(T name) {
     print("My name is $name");
