@@ -45,6 +45,12 @@ void main() {
   marks.remove("Uchenna");
 
   print(marks);
+
+  // to loop through the Maps  7 times
+  for (int i = 0; i < marks.length; i++) {
+    // the .keys is giving us access to all the keys and values in the Map
+    print(marks.keys);
+  }
 }
 
 class Student {
