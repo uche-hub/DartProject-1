@@ -51,6 +51,11 @@ void main() {
     // the .keys is giving us access to all the keys and values in the Map
     print(marks.keys);
   }
+
+  // using forEach to list the Maps Keys and values
+  marks.forEach((key, val) {
+    print("$key : $val");
+  });
 }
 
 class Student {
