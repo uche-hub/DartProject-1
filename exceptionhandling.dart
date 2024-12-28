@@ -13,6 +13,10 @@ void main() {
   } catch (e) {
     // (e) mean exception
     print(e);
+  } finally {
+    // the finally block will always execute  even if the try block throws an exception
+    // finally block used for clean up tasks or releasing resources
+    print("Block Executed");
   }
 
   print("Uchenna");
