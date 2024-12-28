@@ -28,9 +28,9 @@ class Employee {
   void fn() {
     switch (type) {
       case EmployeeType.md:
-        print("Mobile Devloper: ${type.salary} Naira");
+        print("$name: Mobile Devloper: ${type.salary} Naira");
       case EmployeeType.cs:
-        print("Cyber Security: ${type.salary} Naira");
+        print("$name: Cyber Security: ${type.salary} Naira");
       default:
         print("Web Developer");
     }
