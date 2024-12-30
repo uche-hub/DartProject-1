@@ -1,0 +1,7 @@
+name: project_1
+
+environment:
+  sdk: '^3.6.0'
+
+dependencies:
+  http: ^1.2.2
